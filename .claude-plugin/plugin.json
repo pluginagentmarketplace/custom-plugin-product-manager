@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Developer Roadmap Marketplace",
+  "id": "developer-roadmap-marketplace",
+  "version": "1.0.0",
+  "description": "Complete learning platform for 69+ developer roadmaps from kamranahmedse/developer-roadmap with 7 specialized agents, skill-based learning, and interactive assessments. Master any technology stack through structured, personalized learning paths.",
+  "author": "Claude Code Marketplace",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluginagentmarketplace/developer-roadmap-marketplace"
+  },
+  "keywords": [
+    "learning",
+    "roadmap",
+    "developer-tools",
+    "skill-assessment",
+    "career-development",
+    "frontend",
+    "backend",
+    "devops",
+    "data-science",
+    "ai-ml",
+    "mobile-dev",
+    "system-design"
+  ],
+  "agents": [
+    {
+      "id": "frontend-agent",
+      "name": "Frontend & Web Development Expert",
+      "path": "agents/01-frontend-ecosystem.md",
+      "description": "Specializes in modern web technologies: React, Vue, Angular, HTML, CSS, TypeScript, design systems, and UX design"
+    },
+    {
+      "id": "backend-agent",
+      "name": "Backend & Server Architecture Expert",
+      "path": "agents/02-backend-ecosystem.md",
+      "description": "Masters backend frameworks and languages: Node.js, Python, Java, Go, Rust, PHP, Laravel, Spring Boot, ASP.NET, GraphQL, REST API design"
+    },
+    {
+      "id": "data-ai-agent",
+      "name": "Data Science & AI/ML Expert",
+      "path": "agents/03-data-ai-ecosystem.md",
+      "description": "Guides through data engineering, machine learning, AI applications, prompt engineering, and advanced analytics"
+    },
+    {
+      "id": "devops-cloud-agent",
+      "name": "DevOps & Cloud Infrastructure Expert",
+      "path": "agents/04-devops-cloud-ecosystem.md",
+      "description": "Covers containerization, orchestration, cloud platforms (AWS, Cloudflare), Infrastructure as Code, CI/CD, and Linux"
+    },
+    {
+      "id": "mobile-gamedev-agent",
+      "name": "Mobile & Game Development Expert",
+      "path": "agents/05-mobile-gamedev-ecosystem.md",
+      "description": "Specializes in iOS, Android, React Native, Flutter, cross-platform development, and game development"
+    },
+    {
+      "id": "architecture-agent",
+      "name": "Architecture & Design Patterns Expert",
+      "path": "agents/06-architecture-ecosystem.md",
+      "description": "Focuses on system design, software architecture, design patterns, API design, and best practices"
+    },
+    {
+      "id": "management-agent",
+      "name": "Leadership & Specialized Roles Expert",
+      "path": "agents/07-management-specialized-ecosystem.md",
+      "description": "Covers product management, engineering management, technical writing, DevRel, QA, and specialized domains"
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "path": "commands/learn.md",
+      "description": "Start your learning journey and choose from 69+ developer roadmaps"
+    },
+    {
+      "name": "browse-role",
+      "path": "commands/browse-role.md",
+      "description": "Explore all available developer roles and specializations"
+    },
+    {
+      "name": "assess",
+      "path": "commands/assess.md",
+      "description": "Take an interactive assessment to evaluate your knowledge"
+    },
+    {
+      "name": "find-roadmap",
+      "path": "commands/find-roadmap.md",
+      "description": "Search and find specific technology roadmaps"
+    }
+  ],
+  "skills": [
+    {
+      "name": "frontend-ecosystem",
+      "path": "skills/frontend-ecosystem/SKILL.md",
+      "description": "Frontend technologies, frameworks, and best practices"
+    },
+    {
+      "name": "backend-ecosystem",
+      "path": "skills/backend-ecosystem/SKILL.md",
+      "description": "Backend frameworks, databases, and API design"
+    },
+    {
+      "name": "data-ai-ecosystem",
+      "path": "skills/data-ai-ecosystem/SKILL.md",
+      "description": "Data science, machine learning, and AI techniques"
+    },
+    {
+      "name": "devops-cloud-ecosystem",
+      "path": "skills/devops-cloud-ecosystem/SKILL.md",
+      "description": "DevOps, cloud platforms, and infrastructure tools"
+    },
+    {
+      "name": "mobile-gamedev-ecosystem",
+      "path": "skills/mobile-gamedev-ecosystem/SKILL.md",
+      "description": "Mobile development frameworks and game development"
+    },
+    {
+      "name": "architecture-ecosystem",
+      "path": "skills/architecture-ecosystem/SKILL.md",
+      "description": "System design, architecture patterns, and best practices"
+    },
+    {
+      "name": "management-specialized-ecosystem",
+      "path": "skills/management-specialized-ecosystem/SKILL.md",
+      "description": "Management, leadership, and specialized technical roles"
+    }
+  ],
+  "hooks": [
+    {
+      "type": "progress-tracking",
+      "path": "hooks/hooks.json"
+    }
+  ],
+  "marketplaceMetadata": {
+    "category": "learning",
+    "difficulty": "intermediate",
+    "estimatedSetupTime": "2 minutes",
+    "targetAudience": [
+      "developers",
+      "engineers",
+      "product-managers",
+      "devops-specialists",
+      "data-scientists",
+      "students"
+    ],
+    "features": [
+      "69+ structured learning roadmaps",
+      "7 specialized agent guides",
+      "Interactive skill assessments",
+      "Personalized learning paths",
+      "Best practices from industry experts",
+      "Real-world project examples",
+      "Career progression tracking",
+      "Multi-language support ready"
+    ],
+    "stats": {
+      "totalRoadmaps": 69,
+      "agents": 7,
+      "skills": 7,
+      "commands": 4,
+      "estimatedLearningHours": 1500,
+      "contentFiles": 850
+    }
+  }
+}

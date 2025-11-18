@@ -1,0 +1,224 @@
+{
+  "version": "1.0",
+  "hooks": [
+    {
+      "id": "learning-progress-tracker",
+      "name": "Learning Progress Tracker",
+      "description": "Automatically tracks user progress through learning paths",
+      "enabled": true,
+      "triggers": [
+        "after-agent-invoked",
+        "after-skill-invoked",
+        "after-command-executed"
+      ],
+      "actions": [
+        {
+          "type": "log-completion",
+          "data": {
+            "field": "roadmap_progress",
+            "trackingFormat": "json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "skill-assessment-validator",
+      "name": "Skill Assessment Validator",
+      "description": "Validates assessment responses and scores knowledge",
+      "enabled": true,
+      "triggers": [
+        "command:assess"
+      ],
+      "actions": [
+        {
+          "type": "validate-answers",
+          "data": {
+            "scoringMethod": "weighted",
+            "showFeedback": true
+          }
+        },
+        {
+          "type": "generate-recommendations",
+          "data": {
+            "recommendationCount": 3,
+            "basedOnScore": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "roadmap-discovery-suggester",
+      "name": "Roadmap Discovery Suggester",
+      "description": "Suggests relevant roadmaps based on user queries",
+      "enabled": true,
+      "triggers": [
+        "command:find-roadmap",
+        "command:browse-role"
+      ],
+      "actions": [
+        {
+          "type": "search-roadmaps",
+          "data": {
+            "fuzzyMatching": true,
+            "maxResults": 5
+          }
+        },
+        {
+          "type": "rank-by-popularity",
+          "data": {
+            "includeRelated": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "learning-path-optimizer",
+      "name": "Learning Path Optimizer",
+      "description": "Optimizes personalized learning paths based on assessment results",
+      "enabled": true,
+      "triggers": [
+        "command:learn",
+        "assessment-completed"
+      ],
+      "actions": [
+        {
+          "type": "calculate-optimal-path",
+          "data": {
+            "considerSkillLevel": true,
+            "estimateTime": true,
+            "suggestProjects": true
+          }
+        },
+        {
+          "type": "generate-study-schedule",
+          "data": {
+            "weeklyHours": 10,
+            "includeBreaks": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "project-milestone-tracker",
+      "name": "Project Milestone Tracker",
+      "description": "Tracks completion of projects and learning milestones",
+      "enabled": true,
+      "triggers": [
+        "project-started",
+        "project-completed",
+        "milestone-reached"
+      ],
+      "actions": [
+        {
+          "type": "log-achievement",
+          "data": {
+            "updateProfile": true,
+            "notifyUser": true
+          }
+        },
+        {
+          "type": "unlock-next-level",
+          "data": {
+            "gamification": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent-skill-mapper",
+      "name": "Agent & Skill Mapper",
+      "description": "Maps invoked agents and skills for analytics and recommendations",
+      "enabled": true,
+      "triggers": [
+        "agent-invoked",
+        "skill-invoked"
+      ],
+      "actions": [
+        {
+          "type": "track-agent-usage",
+          "data": {
+            "trackingLevel": "detailed",
+            "recordTimestamp": true
+          }
+        },
+        {
+          "type": "suggest-related-content",
+          "data": {
+            "basedOnUsage": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community-engagement-tracker",
+      "name": "Community Engagement Tracker",
+      "description": "Encourages community engagement and peer learning",
+      "enabled": true,
+      "triggers": [
+        "milestone-achieved",
+        "project-completed"
+      ],
+      "actions": [
+        {
+          "type": "suggest-sharing",
+          "data": {
+            "channels": ["twitter", "linkedin", "github"]
+          }
+        },
+        {
+          "type": "recommend-community",
+          "data": {
+            "type": "discord",
+            "findingSimilarLearners": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "periodic-reassessment-reminder",
+      "name": "Periodic Reassessment Reminder",
+      "description": "Reminds users to take reassessments to track progress",
+      "enabled": true,
+      "triggers": [
+        "4-weeks-since-assessment",
+        "milestone-completed"
+      ],
+      "actions": [
+        {
+          "type": "send-reminder",
+          "data": {
+            "message": "You've been learning for a while. Take a reassessment to see your progress!",
+            "suggestCategory": true
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "defaultBehavior": "enable",
+    "userOverride": true,
+    "logging": {
+      "enabled": true,
+      "level": "info",
+      "destination": "local"
+    },
+    "analytics": {
+      "enabled": true,
+      "anonymized": true
+    },
+    "notifications": {
+      "enabled": true,
+      "frequency": "smart",
+      "doNotDisturb": {
+        "enabled": false,
+        "hours": []
+      }
+    },
+    "gamification": {
+      "enabled": true,
+      "showBadges": true,
+      "showStreaks": true,
+      "showLeaderboards": false
+    }
+  }
+}
