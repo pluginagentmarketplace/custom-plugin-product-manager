@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "hooks": [
+    {
+      "id": "pm-progress-tracker",
+      "name": "PM Progress Tracker",
+      "description": "Tracks user progress through product management learning phases",
+      "enabled": true,
+      "triggers": ["command-executed", "agent-invoked"],
+      "actions": [
+        {
+          "type": "log-completion",
+          "data": {
+            "field": "pm_phase_progress",
+            "trackingFormat": "json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "framework-suggester",
+      "name": "Framework Suggester",
+      "description": "Suggests relevant PM frameworks based on context",
+      "enabled": true,
+      "triggers": ["user-mentions", "agent-invoked"],
+      "actions": [
+        {
+          "type": "suggest-framework",
+          "data": {
+            "contextAnalysis": true,
+            "maxSuggestions": 3
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "defaultBehavior": "enable",
+    "userOverride": true,
+    "logging": {
+      "enabled": true,
+      "level": "info"
+    }
+  }
+}

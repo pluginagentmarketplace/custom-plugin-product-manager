@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Product Manager Masterclass",
+  "id": "product-manager-masterclass",
+  "version": "1.0.0",
+  "description": "Comprehensive Product Manager plugin with 7 expert agents, 7 deep-skill modules, and 4 interactive commands. Master every aspect of product management from strategy and discovery through launch and analytics.",
+  "author": "Product Manager Agent System",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluginagentmarketplace/custom-plugin-product-manager"
+  },
+  "keywords": [
+    "product-management",
+    "product-strategy",
+    "user-research",
+    "roadmap",
+    "go-to-market",
+    "analytics",
+    "leadership",
+    "stakeholder-management",
+    "business",
+    "startup"
+  ],
+  "agents": [
+    {
+      "id": "strategy-vision-agent",
+      "name": "Strategy & Vision Agent",
+      "path": "agents/01-strategy-vision.md",
+      "description": "Master market analysis, competitive positioning, product vision, and go-to-market strategy. Define winning positions and long-term success."
+    },
+    {
+      "id": "discovery-research-agent",
+      "name": "Discovery & Research Agent",
+      "path": "agents/02-discovery-research.md",
+      "description": "Expert in user research, customer interviews, persona development, and journey mapping. Understand customer problems deeply."
+    },
+    {
+      "id": "requirements-definition-agent",
+      "name": "Requirements & Definition Agent",
+      "path": "agents/03-requirements-definition.md",
+      "description": "Transform insights into clear requirements, user stories, and acceptance criteria. Define specifications that engineering can execute."
+    },
+    {
+      "id": "roadmap-prioritization-agent",
+      "name": "Roadmap & Prioritization Agent",
+      "path": "agents/04-roadmap-prioritization.md",
+      "description": "Master prioritization frameworks (RICE, MoSCoW, Kano), roadmap planning, and resource allocation. Create focused, executable roadmaps."
+    },
+    {
+      "id": "launch-gtm-agent",
+      "name": "Launch & GTM Agent",
+      "path": "agents/05-launch-gtm.md",
+      "description": "Plan and execute successful product launches. Master go-to-market strategy, sales enablement, and launch coordination."
+    },
+    {
+      "id": "analytics-metrics-agent",
+      "name": "Analytics & Metrics Agent",
+      "path": "agents/06-analytics-metrics.md",
+      "description": "Define KPIs, build dashboards, run A/B tests, and make data-driven decisions. Measure what matters and optimize continuously."
+    },
+    {
+      "id": "leadership-stakeholder-agent",
+      "name": "Leadership & Stakeholder Agent",
+      "path": "agents/07-leadership-stakeholder.md",
+      "description": "Master stakeholder management, executive communication, cross-functional alignment, and product advocacy. Lead effectively."
+    }
+  ],
+  "commands": [
+    {
+      "name": "start",
+      "path": "commands/start.md",
+      "description": "Begin your product manager journey with 7-phase framework and guided learning path."
+    },
+    {
+      "name": "discover",
+      "path": "commands/discover.md",
+      "description": "Master user discovery and research process with step-by-step methodology."
+    },
+    {
+      "name": "roadmap",
+      "path": "commands/roadmap.md",
+      "description": "Create compelling product roadmaps with prioritization frameworks and planning guides."
+    },
+    {
+      "name": "launch",
+      "path": "commands/launch.md",
+      "description": "Execute successful product launches with complete planning guide and execution checklist."
+    }
+  ],
+  "skills": [
+    {
+      "name": "product-strategy",
+      "path": "skills/strategy/SKILL.md",
+      "description": "Product strategy, market analysis, positioning, and go-to-market planning."
+    },
+    {
+      "name": "user-discovery-research",
+      "path": "skills/discovery/SKILL.md",
+      "description": "User research, customer interviews, personas, and journey mapping methodologies."
+    },
+    {
+      "name": "requirements-specification",
+      "path": "skills/requirements/SKILL.md",
+      "description": "Requirements gathering, user story writing, acceptance criteria, and scope management."
+    },
+    {
+      "name": "roadmap-prioritization-planning",
+      "path": "skills/roadmap/SKILL.md",
+      "description": "Prioritization frameworks (RICE, MoSCoW, Kano), roadmap creation, and timeline estimation."
+    },
+    {
+      "name": "launch-gtm-execution",
+      "path": "skills/launch/SKILL.md",
+      "description": "Go-to-market strategy, launch planning, sales enablement, and marketing campaigns."
+    },
+    {
+      "name": "analytics-metrics-kpi",
+      "path": "skills/analytics/SKILL.md",
+      "description": "Metrics frameworks, KPI definition, dashboarding, A/B testing, and data-driven decisions."
+    },
+    {
+      "name": "leadership-stakeholder-management",
+      "path": "skills/leadership/SKILL.md",
+      "description": "Stakeholder management, executive communication, alignment, and product advocacy."
+    }
+  ],
+  "hooks": [
+    {
+      "type": "progress-tracking",
+      "path": "hooks/hooks.json"
+    }
+  ],
+  "marketplaceMetadata": {
+    "category": "business",
+    "difficulty": "intermediate",
+    "estimatedSetupTime": "2 minutes",
+    "targetAudience": [
+      "product-managers",
+      "startup-founders",
+      "entrepreneurs",
+      "product-teams",
+      "business-leaders"
+    ],
+    "features": [
+      "7 specialized expert agents",
+      "7 deep-skill modules (1000+ pages of content)",
+      "4 interactive commands with step-by-step guidance",
+      "Complete product management frameworks",
+      "Market analysis and competitive intelligence",
+      "Customer discovery and research methodologies",
+      "Prioritization frameworks (RICE, MoSCoW, Kano)",
+      "Roadmap planning and execution guides",
+      "Go-to-market strategy and launch checklists",
+      "Metrics and analytics frameworks",
+      "Stakeholder management and communication templates",
+      "Real-world examples and case studies",
+      "Detailed checklists and templates",
+      "Best practices from industry experts"
+    ],
+    "stats": {
+      "agents": 7,
+      "skills": 7,
+      "commands": 4,
+      "contentPages": "1000+",
+      "templates": "50+",
+      "frameworks": "20+",
+      "checklists": "15+"
+    }
+  }
+}
