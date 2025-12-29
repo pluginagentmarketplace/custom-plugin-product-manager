@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "name": "Product Manager Masterclass",
+  "name": "product-manager-assistant",
   "id": "product-manager-masterclass",
   "version": "1.0.0",
   "description": "Comprehensive Product Manager plugin with 7 expert agents, 7 deep-skill modules, and 4 interactive commands. Master every aspect of product management from strategy and discovery through launch and analytics.",
   "author": "Product Manager Agent System",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
     "url": "https://github.com/pluginagentmarketplace/custom-plugin-product-manager"

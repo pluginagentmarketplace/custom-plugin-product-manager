@@ -1,3 +1,9 @@
+---
+name: start
+description: Start Your Product Manager Journey
+allowed-tools: Read
+---
+
 # Start Your Product Manager Journey
 
 Welcome to the **Product Manager Masterclass** - Comprehensive guide for building world-class products.

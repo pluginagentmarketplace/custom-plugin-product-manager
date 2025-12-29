@@ -1,332 +1,262 @@
-# Product Manager Masterclass
+<div align="center">
 
-## 🎯 Complete Product Management Plugin for Claude Code
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Product+Manager+Assistant;7+Agents+%7C+7+Skills;Claude+Code+Plugin" alt="Product Manager Assistant" />
 
-A **production-ready Claude Code plugin** with **7 expert agents**, **7 deep-skill modules** (1000+ pages of content), and **4 interactive commands**. Master every aspect of product management from strategy through analytics.
+<br/>
 
----
+<!-- Badge Row 1: Status Badges -->
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-product-manager/releases)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
 
-## 🤖 **7 Specialized Agents**
+<!-- Badge Row 2: Content Badges -->
+[![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-7-purple?style=flat-square&logo=lightning)](#-skills)
+[![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
 
-Each agent is an expert guide in a core PM domain:
+<br/>
 
-| Agent | Focus | Specialization |
-|-------|-------|-----------------|
-| **🎯 Strategy & Vision** | Market analysis, competitive positioning | Define winning strategy and long-term vision |
-| **🔍 Discovery & Research** | User research, personas, journey mapping | Understand customers deeply |
-| **📋 Requirements & Definition** | Specs, user stories, acceptance criteria | Transform insights into executable specs |
-| **📊 Roadmap & Prioritization** | RICE, MoSCoW, Kano frameworks | Create focused, impact-driven roadmaps |
-| **🚀 Launch & GTM** | Go-to-market, sales enablement, launch | Execute successful product launches |
-| **📈 Analytics & Metrics** | KPIs, dashboards, A/B testing | Make data-driven decisions |
-| **👥 Leadership & Stakeholders** | Communication, alignment, advocacy | Lead effectively across organization |
-
----
-
-## 💎 **7 Deep-Skill Modules**
-
-Each skill provides 100-150 pages of comprehensive guidance:
-
-1. **Product Strategy** - Market analysis, positioning, business models
-2. **User Discovery** - Interview techniques, personas, journey maps
-3. **Requirements** - User stories (INVEST), acceptance criteria, scope
-4. **Roadmap Planning** - RICE scoring, prioritization, resource allocation
-5. **Launch & GTM** - GTM strategy, 12-week launch timeline, sales enablement
-6. **Analytics & Metrics** - Metrics frameworks, dashboarding, A/B testing
-7. **Leadership** - Stakeholder management, communication, alignment
+<!-- Quick CTA Row -->
+[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-product-manager)
 
 ---
 
-## 🎯 **4 Interactive Commands**
+### What is this?
 
-### `/start`
-Begin your PM journey with guided 7-phase framework:
-- Strategy & Vision (Weeks 1-2)
-- Discovery & Research (Weeks 3-4)
-- Requirements & Definition (Weeks 5-6)
-- Roadmap & Prioritization (Weeks 7-8)
-- Launch & GTM (Weeks 9-12)
-- Analytics & Metrics (Ongoing)
-- Leadership & Alignment (Throughout)
+> **Product Manager Assistant** is a Claude Code plugin with **7 agents** and **7 skills** for product manager development.
 
-### `/discover`
-Master user research process step-by-step:
-- Research planning and recruitment
-- Interview techniques and structure
-- Data synthesis and analysis
-- Persona development
-- Journey mapping
-
-### `/roadmap`
-Create compelling product roadmaps:
-- RICE scoring methodology
-- Strategic vs tactical roadmaps
-- Quarterly and sprint planning
-- Dependency management
-- Resource allocation
-
-### `/launch`
-Execute successful launches:
-- 12-week launch timeline
-- Pre-launch, launch, post-launch phases
-- Sales enablement and marketing
-- Go-to-market strategy
-- Launch day checklist
+</div>
 
 ---
 
-## 📦 **Complete Plugin Structure**
+## 📑 Table of Contents
+
+<details>
+<summary>Click to expand</summary>
+
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Agents](#-agents)
+- [Skills](#-skills)
+- [Commands](#-commands)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</details>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Claude Code CLI v2.0.27+
+- Active Claude subscription
+
+### Installation (Choose One)
+
+<details open>
+<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
+
+```bash
+# Step 1️⃣ Add the marketplace
+/plugin add marketplace pluginagentmarketplace/custom-plugin-product-manager
+
+# Step 2️⃣ Install the plugin
+/plugin install product-manager-assistant@pluginagentmarketplace-product-manager
+
+# Step 3️⃣ Restart Claude Code
+# Close and reopen your terminal/IDE
+```
+
+</details>
+
+<details>
+<summary><strong>Option 2: Local Installation</strong></summary>
+
+```bash
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-product-manager.git
+cd custom-plugin-product-manager
+
+# Load locally
+/plugin load .
+
+# Restart Claude Code
+```
+
+</details>
+
+### ✅ Verify Installation
+
+After restart, you should see these agents:
+
+```
+product-manager-assistant:01-strategy-vision
+product-manager-assistant:06-analytics-metrics
+product-manager-assistant:07-leadership-stakeholder
+product-manager-assistant:04-roadmap-prioritization
+product-manager-assistant:05-launch-gtm
+... and 2 more
+```
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🤖 **7 Agents** | Specialized AI agents for product manager tasks |
+| 🛠️ **7 Skills** | Reusable capabilities with Golden Format |
+| ⌨️ **4 Commands** | Quick slash commands |
+| 🔄 **SASMP v1.3.0** | Full protocol compliance |
+
+---
+
+## 🤖 Agents
+
+### 7 Specialized Agents
+
+| # | Agent | Purpose |
+|---|-------|---------|
+| 1 | **01-strategy-vision** | Ürün stratejisi, market analizi, positioning ve vizyonu tanı |
+| 2 | **06-analytics-metrics** | Veri tabanlı karar alma ve ürün metrikleri yönetimi uzmanı.  |
+| 3 | **07-leadership-stakeholder** | Stakeholder yönetimi, cross-functional liderlik ve ürün advo |
+| 4 | **04-roadmap-prioritization** | Ürün roadmap planlama ve feature prioritization uzmanı. Cons |
+| 5 | **05-launch-gtm** | Ürün launch ve go-to-market (GTM) stratejisi uzmanı. Pazara  |
+| 6 | **02-discovery-research** | Kullanıcı araştırması, customer insights ve discovery yöneti |
+| 7 | **03-requirements-definition** | Ürün gereksinimlerini tanımlama, spesifikasyon yazma ve acce |
+
+---
+
+## 🛠️ Skills
+
+### Available Skills
+
+| Skill | Description | Invoke |
+|-------|-------------|--------|
+| `roadmap` | Master prioritization frameworks, roadmap planning, timeline | `Skill("product-manager-assistant:roadmap")` |
+| `launch` | Master go-to-market strategy, launch planning and execution, | `Skill("product-manager-assistant:launch")` |
+| `discovery` | Master user research methodologies, customer interviews, per | `Skill("product-manager-assistant:discovery")` |
+| `requirements` | Master requirements gathering, user story writing, acceptanc | `Skill("product-manager-assistant:requirements")` |
+| `leadership` | Master stakeholder management, executive communication, cros | `Skill("product-manager-assistant:leadership")` |
+| `analytics` | Master metrics definition, KPI tracking, dashboarding, A/B t | `Skill("product-manager-assistant:analytics")` |
+| `strategy` | Master product strategy, market analysis, competitive positi | `Skill("product-manager-assistant:strategy")` |
+
+---
+
+## ⌨️ Commands
+
+| Command | Description |
+|---------|-------------|
+| `/launch` | Product Launch Planning & Execution |
+| `/roadmap` | Product Roadmap Planning |
+| `/start` | Start Your Product Manager Journey |
+| `/discover` | User Discovery & Research Guide |
+
+---
+
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [LICENSE](LICENSE) | License information |
+
+---
+
+## 📁 Project Structure
+
+<details>
+<summary>Click to expand</summary>
 
 ```
 custom-plugin-product-manager/
-├── .claude-plugin/
-│   └── plugin.json ..................... Plugin manifest
-│
-├── agents/ (7 markdown files)
-│   ├── 01-strategy-vision.md
-│   ├── 02-discovery-research.md
-│   ├── 03-requirements-definition.md
-│   ├── 04-roadmap-prioritization.md
-│   ├── 05-launch-gtm.md
-│   ├── 06-analytics-metrics.md
-│   └── 07-leadership-stakeholder.md
-│
-├── commands/ (4 markdown files)
-│   ├── start.md
-│   ├── discover.md
-│   ├── roadmap.md
-│   └── launch.md
-│
-├── skills/ (7 skill modules)
-│   ├── strategy/SKILL.md (500+ lines)
-│   ├── discovery/SKILL.md (400+ lines)
-│   ├── requirements/SKILL.md (400+ lines)
-│   ├── roadmap/SKILL.md (500+ lines)
-│   ├── launch/SKILL.md (450+ lines)
-│   ├── analytics/SKILL.md (400+ lines)
-│   └── leadership/SKILL.md (450+ lines)
-│
-├── hooks/
-│   └── hooks.json
-│
-├── README.md (this file)
-└── LICENSE
-
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 7 agents
+├── 📁 skills/              # 7 skills (Golden Format)
+├── 📁 commands/            # 4 commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
 ```
 
----
-
-## 🚀 **Quick Start (2 minutes)**
-
-### Installation
-
-Load plugin in Claude Code:
-```
-Add Plugin → ./custom-plugin-product-manager
-```
-
-Or use the plugin path directly when working.
-
-### First Steps
-
-```bash
-# 1. Start your PM journey
-/start
-
-# 2. Choose your focus
-/discover    # Learn user research
-/roadmap     # Build roadmaps
-/launch      # Plan launches
-```
+</details>
 
 ---
 
-## 📊 **Content Overview**
+## 📅 Metadata
 
-| Component | Count | Details |
-|-----------|-------|---------|
-| **Agents** | 7 | Expert guides for each PM domain |
-| **Skills** | 7 | 1000+ pages of detailed content |
-| **Commands** | 4 | Interactive step-by-step guides |
-| **Frameworks** | 20+ | RICE, MoSCoW, Kano, etc. |
-| **Templates** | 50+ | Ready-to-use PM templates |
-| **Checklists** | 15+ | Launch, roadmap, assessment lists |
-| **Examples** | 100+ | Real-world scenarios and case studies |
-
----
-
-## 🎓 **Learning Path Example**
-
-### New PM (Start Here)
-1. `/start` - Understand 7-phase framework
-2. Strategy Agent - Define product vision
-3. Discovery Agent - Understand your users
-4. Requirements Agent - Write user stories
-5. Start first project!
-
-### Experienced PM (Deepen Skills)
-1. `/roadmap` - Master RICE and prioritization
-2. `/launch` - Perfect launch execution
-3. Analytics Agent - Become data-driven
-4. Leadership Agent - Executive alignment
-5. Scale your impact!
+| Field | Value |
+|-------|-------|
+| **Version** | 1.0.0 |
+| **Last Updated** | 2025-12-29 |
+| **Status** | Production Ready |
+| **SASMP** | v1.3.0 |
+| **Agents** | 7 |
+| **Skills** | 7 |
+| **Commands** | 4 |
 
 ---
 
-## 🎯 **Use Cases**
+## 🤝 Contributing
 
-### 👤 Product Managers
-- Master PM frameworks and methodologies
-- Improve your strategy and execution
-- Learn best practices from experts
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
 
-### 🏢 Startup Founders
-- Build products customers love
-- Plan launches that work
-- Make data-driven decisions
-
-### 📊 Product Teams
-- Align team on strategy
-- Create better requirements
-- Execute impactful roadmaps
-
-### 🎓 Students & Learners
-- Understand product management
-- Learn from real examples
-- Prepare for PM roles
+1. Fork the repository
+2. Create your feature branch
+3. Follow the Golden Format for new skills
+4. Submit a pull request
 
 ---
 
-## 📖 **What You'll Learn**
+## ⚠️ Security
 
-### Strategy & Vision (Agent 1)
-- Market analysis and TAM/SAM/SOM
-- Competitive positioning
-- Product vision and mission
-- Business model design
-- Go-to-market strategy
-
-### Discovery & Research (Agent 2)
-- User interview techniques
-- Research methodologies
-- Persona development
-- Journey mapping
-- Insight extraction
-
-### Requirements (Agent 3)
-- User story writing (INVEST format)
-- Acceptance criteria
-- Feature specifications
-- Scope management
-- Requirements documentation
-
-### Roadmap & Prioritization (Agent 4)
-- RICE scoring system
-- MoSCoW method
-- Kano model
-- Timeline planning
-- Resource allocation
-
-### Launch & GTM (Agent 5)
-- GTM strategy selection
-- 12-week launch plan
-- Sales enablement
-- Marketing campaigns
-- Launch day execution
-
-### Analytics & Metrics (Agent 6)
-- North Star metrics
-- KPI definition
-- Dashboard architecture
-- A/B testing
-- Cohort analysis
-
-### Leadership (Agent 7)
-- Stakeholder management
-- Executive communication
-- Cross-functional alignment
-- Conflict resolution
-- Change management
+> **Important:** This repository contains third-party code and dependencies.
+>
+> - ✅ Always review code before using in production
+> - ✅ Check dependencies for known vulnerabilities
+> - ✅ Follow security best practices
+> - ✅ Report security issues privately via [Issues](../../issues)
 
 ---
 
-## ✨ **Key Features**
+## 📝 License
 
-✅ **Expert-Level Content** - 1000+ pages of comprehensive PM guidance
-✅ **7 Specialized Agents** - Expert guides for each PM domain
-✅ **Practical Frameworks** - RICE, MoSCoW, Kano, and more
-✅ **Ready-to-Use Templates** - 50+ PM templates and documents
-✅ **Real-World Examples** - 100+ scenarios from tech companies
-✅ **Detailed Checklists** - Launch, roadmap, assessment lists
-✅ **Interactive Commands** - Step-by-step guided processes
-✅ **Production-Ready** - Official Claude Code plugin format
+Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
+
+Custom License - See [LICENSE](LICENSE) for details.
 
 ---
 
-## 🎯 **Success Criteria**
+## 👥 Contributors
 
-After completing this masterclass, you'll be able to:
-
-✓ Conduct user research and extract insights
-✓ Write clear user stories with acceptance criteria
-✓ Build data-driven product roadmaps
-✓ Apply RICE prioritization framework
-✓ Plan and execute successful launches
-✓ Define metrics and build dashboards
-✓ Communicate effectively with stakeholders
-✓ Make product decisions with confidence
-
----
-
-## 📚 **Resource Links**
-
-- **Frameworks**: RICE, MoSCoW, Kano Model, Value vs Effort Matrix
-- **Templates**: OKR, PRD, Launch Plan, Roadmap, Metrics Dashboard
-- **Examples**: Real scenarios, case studies, company examples
-- **Tools**: Recommended PM tools and software
-- **Best Practices**: Industry standards and approaches
+<table>
+<tr>
+<td align="center">
+<strong>Dr. Umit Kacar</strong><br/>
+Senior AI Researcher & Engineer
+</td>
+<td align="center">
+<strong>Muhsin Elcicek</strong><br/>
+Senior Software Architect
+</td>
+</tr>
+</table>
 
 ---
 
-## 🤝 **About This Plugin**
+<div align="center">
 
-**Product Manager Masterclass** is a comprehensive learning and reference system for product management. It combines:
+**Made with ❤️ for the Claude Code Community**
 
-- Deep domain expertise
-- Practical frameworks and methodologies
-- Real-world examples and case studies
-- Interactive guidance and templates
-- Best practices from industry leaders
+[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
 
-Perfect for:
-- PMs improving their skills
-- Teams aligning on PM processes
-- Startups building products
-- Students learning PM
-- Leaders scaling product organizations
-
----
-
-## 📄 **License**
-
-MIT License - Use freely, modify, and share.
-
----
-
-## 🚀 **Get Started Now!**
-
-```bash
-# Load in Claude Code
-/start
-
-# Or jump to what you need
-/discover   # Learn user research
-/roadmap    # Build roadmaps
-/launch     # Plan launches
-```
-
-**Master product management and build amazing products! 🎯**
-
----
-
-*Powered by Product Manager Agent System*
-*Part of the Claude Code Marketplace Plugin Ecosystem*
+</div>

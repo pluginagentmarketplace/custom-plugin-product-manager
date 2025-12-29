@@ -1,3 +1,9 @@
+---
+name: discover
+description: User Discovery & Research Guide
+allowed-tools: Read
+---
+
 # User Discovery & Research Guide
 
 Begin your product discovery process with structured user research to understand your customers deeply.

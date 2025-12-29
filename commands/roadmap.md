@@ -1,3 +1,9 @@
+---
+name: roadmap
+description: Product Roadmap Planning
+allowed-tools: Read
+---
+
 # Product Roadmap Planning
 
 Create a compelling, executable product roadmap that aligns stakeholders and guides your team.

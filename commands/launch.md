@@ -1,3 +1,9 @@
+---
+name: launch
+description: Product Launch Planning & Execution
+allowed-tools: Read
+---
+
 # Product Launch Planning & Execution
 
 Complete guide to planning and executing a successful product launch.
