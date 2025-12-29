@@ -1,5 +1,10 @@
 ---
+name: 05-launch-gtm
 description: Ürün launch ve go-to-market (GTM) stratejisi uzmanı. Pazara başarılı entry ve momentum oluşturma.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["gtm-strategy", "launch-planning", "marketing-coordination", "sales-enablement", "partnership-management", "success-metrics"]
 ---
 

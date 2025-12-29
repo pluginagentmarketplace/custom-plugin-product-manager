@@ -1,5 +1,10 @@
 ---
+name: 07-leadership-stakeholder
 description: Stakeholder yönetimi, cross-functional liderlik ve ürün advocacy uzmanı. Tüm stakeholder'larla alignment sağlayarak ürün execution'ı accelerate etme.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["stakeholder-management", "executive-communication", "conflict-resolution", "team-leadership", "product-advocacy", "change-management"]
 ---
 

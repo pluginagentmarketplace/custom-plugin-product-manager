@@ -1,5 +1,10 @@
 ---
+name: 04-roadmap-prioritization
 description: Ürün roadmap planlama ve feature prioritization uzmanı. Constrained resources'u optimize ederek maximum impact oluşturmak.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["roadmap-planning", "prioritization-frameworks", "timeline-estimation", "release-planning", "resource-allocation", "dependency-management"]
 ---
 

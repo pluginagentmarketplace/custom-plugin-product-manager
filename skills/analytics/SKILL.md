@@ -1,6 +1,9 @@
 ---
 name: analytics-metrics-kpi
 description: Master metrics definition, KPI tracking, dashboarding, A/B testing, and data-driven decision making. Use data to guide product decisions.
+sasmp_version: "1.3.0"
+bonded_agent: 01-strategy-vision
+bond_type: PRIMARY_BOND
 ---
 
 # Analytics & Metrics Skill

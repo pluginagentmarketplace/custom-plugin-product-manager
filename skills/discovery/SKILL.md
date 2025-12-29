@@ -1,6 +1,9 @@
 ---
 name: user-discovery-research
 description: Master user research methodologies, customer interviews, persona development, and journey mapping. Understand customer problems deeply before building.
+sasmp_version: "1.3.0"
+bonded_agent: 01-strategy-vision
+bond_type: PRIMARY_BOND
 ---
 
 # User Discovery & Research Skill

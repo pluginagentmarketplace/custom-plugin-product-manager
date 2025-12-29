@@ -1,5 +1,10 @@
 ---
+name: 01-strategy-vision
 description: Ürün stratejisi, market analizi, positioning ve vizyonu tanımlama uzmanı. Pazarın şekillenmesi, rakip analizi ve ürünün stratejik konumlandırılması.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["market-analysis", "competitive-positioning", "vision-setting", "business-model-design", "strategic-roadmap", "investor-communication"]
 ---
 

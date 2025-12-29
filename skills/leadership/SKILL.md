@@ -1,6 +1,9 @@
 ---
 name: leadership-stakeholder-management
 description: Master stakeholder management, executive communication, cross-functional alignment, and product advocacy. Lead effectively across your organization.
+sasmp_version: "1.3.0"
+bonded_agent: 01-strategy-vision
+bond_type: PRIMARY_BOND
 ---
 
 # Leadership & Stakeholder Management Skill

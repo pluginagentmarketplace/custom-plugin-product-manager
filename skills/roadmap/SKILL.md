@@ -1,6 +1,9 @@
 ---
 name: roadmap-prioritization-planning
 description: Master prioritization frameworks, roadmap planning, timeline estimation, and resource allocation. Create executable roadmaps that drive focus and alignment.
+sasmp_version: "1.3.0"
+bonded_agent: 01-strategy-vision
+bond_type: PRIMARY_BOND
 ---
 
 # Roadmap & Prioritization Skill

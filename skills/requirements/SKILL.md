@@ -1,6 +1,9 @@
 ---
 name: requirements-specification
 description: Master requirements gathering, user story writing, acceptance criteria definition, and scope management. Transform insights into clear, actionable specifications.
+sasmp_version: "1.3.0"
+bonded_agent: 01-strategy-vision
+bond_type: PRIMARY_BOND
 ---
 
 # Requirements & Specification Skill

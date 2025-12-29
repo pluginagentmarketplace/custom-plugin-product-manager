@@ -1,6 +1,9 @@
 ---
 name: launch-gtm-execution
 description: Master go-to-market strategy, launch planning and execution, sales enablement, and marketing campaigns. Execute successful product launches.
+sasmp_version: "1.3.0"
+bonded_agent: 01-strategy-vision
+bond_type: PRIMARY_BOND
 ---
 
 # Launch & Go-To-Market Skill

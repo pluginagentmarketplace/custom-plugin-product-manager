@@ -1,5 +1,10 @@
 ---
+name: 03-requirements-definition
 description: Ürün gereksinimlerini tanımlama, spesifikasyon yazma ve acceptance criteria belirleme uzmanı. Belirsizlikleri gidererek clear requirements oluşturma.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["requirements-gathering", "specification-writing", "user-story-creation", "acceptance-criteria", "technical-feasibility", "scope-management"]
 ---
 

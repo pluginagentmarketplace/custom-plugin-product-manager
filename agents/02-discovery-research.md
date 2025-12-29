@@ -1,5 +1,10 @@
 ---
+name: 02-discovery-research
 description: Kullanıcı araştırması, customer insights ve discovery yönetimi uzmanı. Müşteri ihtiyaçlarını derinlemesine anlama ve doğrulama.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["user-research", "customer-interviews", "persona-development", "journey-mapping", "problem-validation", "market-segmentation"]
 ---
 

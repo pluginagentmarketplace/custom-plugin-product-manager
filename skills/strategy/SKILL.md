@@ -1,6 +1,9 @@
 ---
 name: product-strategy
 description: Master product strategy, market analysis, competitive positioning, and long-term product vision. Define business models and craft go-to-market strategies that drive success.
+sasmp_version: "1.3.0"
+bonded_agent: 01-strategy-vision
+bond_type: PRIMARY_BOND
 ---
 
 # Product Strategy & Vision Skill
