@@ -1,9 +1,23 @@
 ---
 name: leadership-stakeholder-management
+version: "2.0.0"
 description: Master stakeholder management, executive communication, cross-functional alignment, and product advocacy. Lead effectively across your organization.
 sasmp_version: "1.3.0"
-bonded_agent: 01-strategy-vision
+bonded_agent: 07-leadership-stakeholder
 bond_type: PRIMARY_BOND
+parameters:
+  - name: communication_type
+    type: string
+    enum: [executive, cross_functional, board, team]
+    required: true
+  - name: stakeholder_count
+    type: number
+retry_logic:
+  max_attempts: 3
+  backoff: exponential
+logging:
+  level: info
+  hooks: [start, complete, error]
 ---
 
 # Leadership & Stakeholder Management Skill
@@ -424,6 +438,33 @@ I'm adding it to the roadmap for Q2. Can we put a placeholder?"
 "I understand you need this. Our roadmap is full of higher-impact
 items. If this is truly critical, what would you deprioritize?
 I need to understand the trade-off."
+
+## Troubleshooting
+
+### Yaygın Hatalar & Çözümler
+
+| Hata | Olası Sebep | Çözüm |
+|------|-------------|-------|
+| Stakeholder resistance | Insufficient involvement | Early inclusion |
+| Decision paralysis | Too many stakeholders | RACI matrix |
+| Misalignment | Poor communication | Increase cadence |
+| Conflict escalation | Unaddressed concerns | 1:1 meetings |
+
+### Debug Checklist
+
+```
+[ ] Tüm stakeholder'lar identified mi?
+[ ] RACI matrix var mı?
+[ ] Communication cadence set mi?
+[ ] Decision rights clear mi?
+[ ] Conflict early identified mi?
+```
+
+### Recovery Procedures
+
+1. **Stakeholder Conflict** → 1:1 meetings, understand concerns
+2. **Decision Deadlock** → Trade-off matrix, escalate
+3. **Change Resistance** → Address concerns, show benefits
 
 ---
 

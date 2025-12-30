@@ -1,9 +1,24 @@
 ---
 name: launch-gtm-execution
+version: "2.0.0"
 description: Master go-to-market strategy, launch planning and execution, sales enablement, and marketing campaigns. Execute successful product launches.
 sasmp_version: "1.3.0"
-bonded_agent: 01-strategy-vision
+bonded_agent: 05-launch-gtm
 bond_type: PRIMARY_BOND
+parameters:
+  - name: launch_date
+    type: string
+    format: date
+    required: true
+  - name: gtm_model
+    type: string
+    enum: [direct_sales, self_service, sales_dev, channel]
+retry_logic:
+  max_attempts: 3
+  backoff: exponential
+logging:
+  level: info
+  hooks: [start, complete, error]
 ---
 
 # Launch & Go-To-Market Skill
@@ -332,6 +347,35 @@ Define your ideal customer:
 - MRR (Monthly Recurring Revenue)
 - ACV (Average Contract Value)
 - Payback period
+
+## Troubleshooting
+
+### Yaygın Hatalar & Çözümler
+
+| Hata | Olası Sebep | Çözüm |
+|------|-------------|-------|
+| Launch delay | Product not ready | Parallel tracks, beta extend |
+| Low buzz | Insufficient marketing | 4-week teaser campaign |
+| Sales not ready | Late enablement | Training week 6 |
+| Support overwhelmed | Under-staffed | Temp staff, extended hours |
+
+### Debug Checklist
+
+```
+[ ] GTM model clearly defined mi?
+[ ] Target segments validated mi?
+[ ] Messaging tested mi?
+[ ] Sales team trained mi?
+[ ] Support docs ready mi?
+[ ] Rollback plan var mı?
+[ ] Monitoring configured mı?
+```
+
+### Recovery Procedures
+
+1. **Launch Date Slip** → Communicate early, propose new date
+2. **Critical Bug** → Activate rollback procedure
+3. **Low Adoption** → Accelerate marketing, CS outreach
 
 ---
 

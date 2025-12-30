@@ -1,9 +1,24 @@
 ---
 name: analytics-metrics-kpi
+version: "2.0.0"
 description: Master metrics definition, KPI tracking, dashboarding, A/B testing, and data-driven decision making. Use data to guide product decisions.
 sasmp_version: "1.3.0"
-bonded_agent: 01-strategy-vision
+bonded_agent: 06-analytics-metrics
 bond_type: PRIMARY_BOND
+parameters:
+  - name: product_stage
+    type: string
+    enum: [pre-launch, growth, mature]
+    required: true
+  - name: metric_category
+    type: string
+    enum: [acquisition, activation, retention, revenue, referral]
+retry_logic:
+  max_attempts: 3
+  backoff: exponential
+logging:
+  level: info
+  hooks: [start, complete, error]
 ---
 
 # Analytics & Metrics Skill
@@ -305,6 +320,34 @@ If CAC = $400: LTV/CAC = 4x ✓ (target: 3x+)
 - Strategic metric review
 - Long-term trend analysis
 - Metric changes needed
+
+## Troubleshooting
+
+### Yaygın Hatalar & Çözümler
+
+| Hata | Olası Sebep | Çözüm |
+|------|-------------|-------|
+| Vanity metrics focus | Wrong KPI selection | North Star alignment |
+| Inconclusive A/B test | Low sample size | Extend duration |
+| Data inconsistency | Multiple sources | Single source of truth |
+| Dashboard unused | Too complex | Simplify to 5-7 KPIs |
+
+### Debug Checklist
+
+```
+[ ] North Star metric defined mi?
+[ ] Metrics business goals'a aligned mi?
+[ ] Data collection accurate mi?
+[ ] Dashboard refreshed mi?
+[ ] A/B test sample sufficient mi?
+[ ] Statistical significance achieved mi?
+```
+
+### Recovery Procedures
+
+1. **Data Quality Issues** → Flag affected metrics, exclude
+2. **Inconclusive A/B** → Extend test duration
+3. **Misleading Metrics** → Add context/segmentation
 
 ---
 

@@ -1,7 +1,54 @@
 ---
 name: launch
-description: Product Launch Planning & Execution
+version: "2.0.0"
+description: Product Launch Planning & Execution - GTM strategy and launch checklists
+sasmp_version: "1.3.0"
 allowed-tools: Read
+invokes:
+  agents: [05-launch-gtm]
+  skills: [launch, stakeholder-communication]
+input_schema:
+  properties:
+    launch_phase:
+      type: string
+      enum: [strategy, planning, preparation, execution, post_launch]
+      description: "Current phase of launch process"
+    weeks_to_launch:
+      type: number
+      description: "Weeks remaining until launch date"
+    launch_type:
+      type: string
+      enum: [major, minor, feature, beta]
+      description: "Type of product launch"
+output_schema:
+  deliverables:
+    - launch_timeline
+    - gtm_strategy
+    - launch_checklist
+    - sales_enablement_pack
+    - communication_plan
+  format: markdown
+help_text: |
+  /launch - Plan and execute product launch
+
+  Usage: /launch [launch_phase] [weeks_to_launch]
+
+  Examples:
+    /launch                         # Full launch guide
+    /launch strategy 12             # Strategy phase, 12 weeks out
+    /launch preparation 4           # Preparation, 4 weeks out
+    /launch execution 0             # Launch week execution
+    /launch post_launch             # Post-launch activities
+usage_examples:
+  - "/launch"
+  - "/launch strategy"
+  - "/launch planning 8"
+  - "/launch execution 0"
+exit_codes:
+  0: success
+  1: invalid_phase
+  2: invalid_launch_type
+  3: checklist_incomplete
 ---
 
 # Product Launch Planning & Execution

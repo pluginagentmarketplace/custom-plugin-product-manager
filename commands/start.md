@@ -1,7 +1,45 @@
 ---
 name: start
-description: Start Your Product Manager Journey
+version: "2.0.0"
+description: Start Your Product Manager Journey - Comprehensive onboarding and navigation guide
+sasmp_version: "1.3.0"
 allowed-tools: Read
+invokes:
+  agents: [all]
+  skills: [strategy, discovery, requirements, roadmap, launch, analytics, leadership]
+input_schema:
+  properties:
+    experience_level:
+      type: string
+      enum: [beginner, intermediate, advanced]
+      description: "User's PM experience level for personalized recommendations"
+    focus_area:
+      type: string
+      enum: [strategy, discovery, execution, analytics, leadership]
+      description: "Primary area of interest"
+output_schema:
+  deliverables:
+    - personalized_learning_path
+    - recommended_agents
+    - quick_start_checklist
+  format: markdown
+help_text: |
+  /start - Begin your product manager journey
+
+  Usage: /start [experience_level] [focus_area]
+
+  Examples:
+    /start                     # Full overview
+    /start beginner strategy   # Beginner focused on strategy
+    /start advanced analytics  # Advanced PM focusing on metrics
+usage_examples:
+  - "/start"
+  - "/start beginner"
+  - "/start intermediate discovery"
+exit_codes:
+  0: success
+  1: invalid_experience_level
+  2: invalid_focus_area
 ---
 
 # Start Your Product Manager Journey
