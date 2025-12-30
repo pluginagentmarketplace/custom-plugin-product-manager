@@ -1,7 +1,54 @@
 ---
 name: roadmap
-description: Product Roadmap Planning
+version: "2.0.0"
+description: Product Roadmap Planning - Prioritization frameworks and planning templates
+sasmp_version: "1.3.0"
 allowed-tools: Read
+invokes:
+  agents: [04-roadmap-prioritization]
+  skills: [roadmap, agile]
+input_schema:
+  properties:
+    roadmap_type:
+      type: string
+      enum: [strategic, tactical, initiative, sprint]
+      description: "Type of roadmap to create"
+    timeframe:
+      type: string
+      enum: [quarterly, annual, custom]
+      description: "Planning timeframe"
+    framework:
+      type: string
+      enum: [rice, moscow, kano, value_effort]
+      description: "Prioritization framework to apply"
+output_schema:
+  deliverables:
+    - prioritization_matrix
+    - roadmap_template
+    - sprint_plan
+    - dependency_map
+    - risk_register
+  format: markdown
+help_text: |
+  /roadmap - Create product roadmap with prioritization
+
+  Usage: /roadmap [roadmap_type] [framework]
+
+  Examples:
+    /roadmap                        # Full roadmap guide
+    /roadmap strategic annual       # Annual strategic roadmap
+    /roadmap tactical rice          # Quarterly with RICE scoring
+    /roadmap sprint                 # Sprint planning focus
+usage_examples:
+  - "/roadmap"
+  - "/roadmap strategic"
+  - "/roadmap tactical rice"
+  - "/roadmap sprint moscow"
+exit_codes:
+  0: success
+  1: invalid_roadmap_type
+  2: invalid_framework
+  3: missing_features_input
 ---
 
 # Product Roadmap Planning

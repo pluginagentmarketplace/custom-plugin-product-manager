@@ -1,7 +1,54 @@
 ---
 name: discover
-description: User Discovery & Research Guide
+version: "2.0.0"
+description: User Discovery & Research Guide - Structured research methodology and templates
+sasmp_version: "1.3.0"
 allowed-tools: Read
+invokes:
+  agents: [02-discovery-research]
+  skills: [discovery, user-research]
+input_schema:
+  properties:
+    research_phase:
+      type: string
+      enum: [planning, conducting, synthesis, persona, journey]
+      description: "Current phase of research process"
+    method:
+      type: string
+      enum: [interviews, surveys, usability, observation, mixed]
+      description: "Primary research methodology"
+    sample_size:
+      type: number
+      default: 20
+      description: "Target number of research participants"
+output_schema:
+  deliverables:
+    - research_plan
+    - interview_guide
+    - synthesis_framework
+    - persona_template
+    - journey_map_template
+  format: markdown
+help_text: |
+  /discover - Start user research and discovery process
+
+  Usage: /discover [research_phase] [method]
+
+  Examples:
+    /discover                      # Full discovery guide
+    /discover planning interviews  # Plan interview research
+    /discover synthesis            # Synthesize collected data
+    /discover persona              # Create user personas
+usage_examples:
+  - "/discover"
+  - "/discover planning"
+  - "/discover conducting interviews"
+  - "/discover synthesis"
+exit_codes:
+  0: success
+  1: invalid_phase
+  2: invalid_method
+  3: insufficient_data
 ---
 
 # User Discovery & Research Guide

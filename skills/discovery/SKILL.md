@@ -1,9 +1,24 @@
 ---
 name: user-discovery-research
+version: "2.0.0"
 description: Master user research methodologies, customer interviews, persona development, and journey mapping. Understand customer problems deeply before building.
 sasmp_version: "1.3.0"
-bonded_agent: 01-strategy-vision
+bonded_agent: 02-discovery-research
 bond_type: PRIMARY_BOND
+parameters:
+  - name: research_type
+    type: string
+    enum: [interviews, surveys, usability, mixed]
+    required: true
+  - name: sample_size
+    type: number
+    default: 20
+retry_logic:
+  max_attempts: 3
+  backoff: exponential
+logging:
+  level: info
+  hooks: [start, complete, error]
 ---
 
 # User Discovery & Research Skill
@@ -289,6 +304,33 @@ From your research:
 3. How do they solve it today?
 4. What would ideal solution look like?
 5. Would they pay for it, and how much?
+
+## Troubleshooting
+
+### Yaygın Hatalar & Çözümler
+
+| Hata | Olası Sebep | Çözüm |
+|------|-------------|-------|
+| Düşük interview katılımı | Yanlış incentive | $50-100 gift card |
+| Yüzeysel insights | Leading questions | "Why?" 5x sor |
+| Conflicting feedback | Mixed segments | Segment-based analysis |
+| Persona generic | Insufficient data | +10 interview |
+
+### Debug Checklist
+
+```
+[ ] Sample size yeterli mi? (min 15-20)
+[ ] Questions leading değil mi?
+[ ] Recording consent alındı mı?
+[ ] Synthesis 24h içinde yapıldı mı?
+[ ] Bias check yapıldı mı?
+```
+
+### Recovery Procedures
+
+1. **Low Participation** → Adjust incentive or channel
+2. **Conflicting Data** → Segment by user type
+3. **Interviewer Bias** → Add second interviewer
 
 ---
 

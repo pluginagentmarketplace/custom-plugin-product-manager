@@ -1,9 +1,24 @@
 ---
 name: roadmap-prioritization-planning
+version: "2.0.0"
 description: Master prioritization frameworks, roadmap planning, timeline estimation, and resource allocation. Create executable roadmaps that drive focus and alignment.
 sasmp_version: "1.3.0"
-bonded_agent: 01-strategy-vision
+bonded_agent: 04-roadmap-prioritization
 bond_type: PRIMARY_BOND
+parameters:
+  - name: backlog
+    type: array
+    required: true
+    description: Feature list to prioritize
+  - name: framework
+    type: string
+    enum: [rice, moscow, kano, ice, wsjf]
+retry_logic:
+  max_attempts: 3
+  backoff: exponential
+logging:
+  level: info
+  hooks: [start, complete, error]
 ---
 
 # Roadmap & Prioritization Skill
@@ -346,6 +361,33 @@ Result: 50 points × 30% = 15 points for features
 - Market shift
 - Unexpected technical blocker
 - Resource availability change
+
+## Troubleshooting
+
+### Yaygın Hatalar & Çözümler
+
+| Hata | Olası Sebep | Çözüm |
+|------|-------------|-------|
+| Roadmap sürekli kayıyor | Unrealistic estimates | 30% buffer ekle |
+| Priority debates | Unclear criteria | RICE workshop |
+| Resource contention | Over-commitment | Capacity planning |
+| Dependencies blocking | Late identification | Sprint 0 mapping |
+
+### Debug Checklist
+
+```
+[ ] RICE scoring consistent mi?
+[ ] Capacity realistic mi? (20% buffer)
+[ ] Dependencies mapped mi?
+[ ] Stakeholder alignment var mı?
+[ ] Risk mitigation planı var mı?
+```
+
+### Recovery Procedures
+
+1. **Roadmap Slip** → Re-prioritize, cut scope
+2. **Resource Conflict** → Trade-off matrix
+3. **Priority Disagreement** → Data-driven RICE
 
 ---
 

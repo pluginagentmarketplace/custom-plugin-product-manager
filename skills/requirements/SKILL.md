@@ -1,9 +1,23 @@
 ---
 name: requirements-specification
+version: "2.0.0"
 description: Master requirements gathering, user story writing, acceptance criteria definition, and scope management. Transform insights into clear, actionable specifications.
 sasmp_version: "1.3.0"
-bonded_agent: 01-strategy-vision
+bonded_agent: 03-requirements-definition
 bond_type: PRIMARY_BOND
+parameters:
+  - name: feature_context
+    type: string
+    required: true
+  - name: output_format
+    type: string
+    enum: [user_stories, prd, bdd, use_cases]
+retry_logic:
+  max_attempts: 3
+  backoff: exponential
+logging:
+  level: info
+  hooks: [start, complete, error]
 ---
 
 # Requirements & Specification Skill
@@ -274,6 +288,33 @@ Alternative Flows:
 - ✓ Reviewed by engineering lead
 - ✓ Reviewed by design lead
 - ✓ Stakeholder aligned
+
+## Troubleshooting
+
+### Yaygın Hatalar & Çözümler
+
+| Hata | Olası Sebep | Çözüm |
+|------|-------------|-------|
+| Story çok büyük | Epic olarak yazıldı | Story breakdown |
+| AC belirsiz | Vague criteria | Given/When/Then format |
+| Scope creep | Change mgmt yok | Change request process |
+| Missing edge cases | Happy path focus | Edge case workshop |
+
+### Debug Checklist
+
+```
+[ ] Her story INVEST criteria geçiyor mu?
+[ ] Acceptance criteria testable mı?
+[ ] Non-functional requirements tanımlı mı?
+[ ] Dependencies documented mı?
+[ ] Engineering review yapıldı mı?
+```
+
+### Recovery Procedures
+
+1. **Ambiguous Requirements** → Clarification meeting
+2. **Scope Creep** → Trade-off matrix
+3. **Missing Feasibility** → Engineering spike
 
 ---
 

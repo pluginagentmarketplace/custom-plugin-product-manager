@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "name": "product-manager-assistant",
   "id": "product-manager-masterclass",
-  "version": "1.0.0",
-  "description": "Comprehensive Product Manager plugin with 7 expert agents, 7 deep-skill modules, and 4 interactive commands. Master every aspect of product management from strategy and discovery through launch and analytics.",
+  "version": "2.0.0",
+  "description": "Comprehensive Product Manager plugin with 8 expert agents, 12 deep-skill modules, and 4 interactive commands. Master every aspect of product management from strategy and discovery through launch, analytics, and operations. SASMP v1.3.0 compliant.",
   "author": "Product Manager Agent System",
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
@@ -64,6 +64,12 @@
       "name": "Leadership & Stakeholder Agent",
       "path": "agents/07-leadership-stakeholder.md",
       "description": "Master stakeholder management, executive communication, cross-functional alignment, and product advocacy. Lead effectively."
+    },
+    {
+      "id": "product-operations-agent",
+      "name": "Product Operations Agent",
+      "path": "agents/08-product-operations.md",
+      "description": "Streamline product operations, agile practices, tooling, and team processes. Optimize delivery and operational excellence."
     }
   ],
   "commands": [
@@ -123,6 +129,31 @@
       "name": "leadership-stakeholder-management",
       "path": "skills/leadership/SKILL.md",
       "description": "Stakeholder management, executive communication, alignment, and product advocacy."
+    },
+    {
+      "name": "agile-product-management",
+      "path": "skills/agile/SKILL.md",
+      "description": "Agile methodologies, Scrum practices, sprint planning, and team collaboration."
+    },
+    {
+      "name": "pricing-monetization",
+      "path": "skills/pricing/SKILL.md",
+      "description": "Pricing strategies, monetization models, unit economics, and revenue optimization."
+    },
+    {
+      "name": "competitive-analysis",
+      "path": "skills/competitive-analysis/SKILL.md",
+      "description": "Competitive intelligence, market analysis, battlecards, and strategic positioning."
+    },
+    {
+      "name": "stakeholder-communication",
+      "path": "skills/stakeholder-communication/SKILL.md",
+      "description": "Executive communication, BLUF format, presentation skills, and stakeholder management."
+    },
+    {
+      "name": "user-research-methods",
+      "path": "skills/user-research/SKILL.md",
+      "description": "User research methods, interview techniques, surveys, and insight synthesis."
     }
   ],
   "hooks": [
@@ -143,8 +174,8 @@
       "business-leaders"
     ],
     "features": [
-      "7 specialized expert agents",
-      "7 deep-skill modules (1000+ pages of content)",
+      "8 specialized expert agents",
+      "12 deep-skill modules (1500+ pages of content)",
       "4 interactive commands with step-by-step guidance",
       "Complete product management frameworks",
       "Market analysis and competitive intelligence",
@@ -159,13 +190,13 @@
       "Best practices from industry experts"
     ],
     "stats": {
-      "agents": 7,
-      "skills": 7,
+      "agents": 8,
+      "skills": 12,
       "commands": 4,
-      "contentPages": "1000+",
-      "templates": "50+",
-      "frameworks": "20+",
-      "checklists": "15+"
+      "contentPages": "1500+",
+      "templates": "75+",
+      "frameworks": "25+",
+      "checklists": "20+"
     }
   }
 }

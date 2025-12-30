@@ -1,9 +1,24 @@
 ---
 name: product-strategy
+version: "2.0.0"
 description: Master product strategy, market analysis, competitive positioning, and long-term product vision. Define business models and craft go-to-market strategies that drive success.
 sasmp_version: "1.3.0"
 bonded_agent: 01-strategy-vision
 bond_type: PRIMARY_BOND
+parameters:
+  - name: market_context
+    type: string
+    required: true
+    description: Market veya ürün hakkında context
+  - name: analysis_type
+    type: string
+    enum: [tam_sam_som, competitive, positioning, business_model]
+retry_logic:
+  max_attempts: 3
+  backoff: exponential
+logging:
+  level: info
+  hooks: [start, complete, error]
 ---
 
 # Product Strategy & Vision Skill
@@ -347,6 +362,33 @@ If CAC = $5,000: LTV/CAC = 3.2x ✓
 - Better opportunity emerged
 - Team capabilities misaligned
 - Unit economics don't work
+
+## Troubleshooting
+
+### Yaygın Hatalar & Çözümler
+
+| Hata | Olası Sebep | Çözüm |
+|------|-------------|-------|
+| TAM/SAM hesaplama hatası | Yanlış multiplier | Assumptions'ları document et |
+| Positioning belirsiz | Çok fazla segment | Single ICP focus |
+| Business model sürdürülebilir değil | Unit economics negatif | LTV/CAC analizi |
+| GTM channel ineffective | Yanlış channel seçimi | A/B test channels |
+
+### Debug Checklist
+
+```
+[ ] TAM/SAM/SOM varsayımları documented mı?
+[ ] Competitive matrix güncel mi?
+[ ] Value proposition tested mi?
+[ ] Pricing sensitivity analyzed mı?
+[ ] GTM channel hypothesis validated mı?
+```
+
+### Recovery Procedures
+
+1. **Market Size Uncertainty** → Scenario analysis (3 cases)
+2. **Positioning Confusion** → Customer interviews for validation
+3. **Business Model Issues** → Unit economics deep dive
 
 ---
 
