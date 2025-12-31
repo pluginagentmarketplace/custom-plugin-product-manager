@@ -6,10 +6,7 @@
   "description": "Comprehensive Product Manager plugin with 8 expert agents, 12 deep-skill modules, and 4 interactive commands. Master every aspect of product management from strategy and discovery through launch, analytics, and operations. SASMP v1.3.0 compliant.",
   "author": "Product Manager Agent System",
   "license": "SEE LICENSE IN LICENSE",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pluginagentmarketplace/custom-plugin-product-manager"
-  },
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-product-manager",
   "keywords": [
     "product-management",
     "product-strategy",
