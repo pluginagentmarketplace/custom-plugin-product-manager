@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Typing Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Product+Manager+Assistant;7+Agents+%7C+7+Skills;Claude+Code+Plugin" alt="Product Manager Assistant" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Product+Manager+Assistant;8+Agents+%7C+12+Skills;Claude+Code+Plugin" alt="Product Manager Assistant" />
 
 <br/>
 
@@ -12,8 +12,8 @@
 [![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
 
 <!-- Badge Row 2: Content Badges -->
-[![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square&logo=robot)](#-agents)
-[![Skills](https://img.shields.io/badge/Skills-7-purple?style=flat-square&logo=lightning)](#-skills)
+[![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-12-purple?style=flat-square&logo=lightning)](#-skills)
 [![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
 
 <br/>
@@ -25,7 +25,7 @@
 
 ### What is this?
 
-> **Product Manager Assistant** is a Claude Code plugin with **7 agents** and **7 skills** for product manager development.
+> **Product Manager Assistant** is a Claude Code plugin with **8 agents** and **12 skills** for product manager development.
 
 </div>
 
@@ -109,8 +109,8 @@ product-manager-assistant:05-launch-gtm
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 **7 Agents** | Specialized AI agents for product manager tasks |
-| 🛠️ **7 Skills** | Reusable capabilities with Golden Format |
+| 🤖 **8 Agents** | Specialized AI agents for product manager tasks |
+| 🛠️ **12 Skills** | Reusable capabilities with Golden Format |
 | ⌨️ **4 Commands** | Quick slash commands |
 | 🔄 **SASMP v1.3.0** | Full protocol compliance |
 
@@ -118,7 +118,7 @@ product-manager-assistant:05-launch-gtm
 
 ## 🤖 Agents
 
-### 7 Specialized Agents
+### 8 Specialized Agents
 
 | # | Agent | Purpose |
 |---|-------|---------|
@@ -179,8 +179,8 @@ custom-plugin-product-manager/
 ├── 📁 .claude-plugin/
 │   ├── plugin.json
 │   └── marketplace.json
-├── 📁 agents/              # 7 agents
-├── 📁 skills/              # 7 skills (Golden Format)
+├── 📁 agents/              # 8 agents
+├── 📁 skills/              # 12 skills (Golden Format)
 ├── 📁 commands/            # 4 commands
 ├── 📁 hooks/
 ├── 📄 README.md
@@ -200,8 +200,8 @@ custom-plugin-product-manager/
 | **Last Updated** | 2025-12-29 |
 | **Status** | Production Ready |
 | **SASMP** | v1.3.0 |
-| **Agents** | 7 |
-| **Skills** | 7 |
+| **Agents** | 8 |
+| **Skills** | 12 |
 | **Commands** | 4 |
 
 ---
