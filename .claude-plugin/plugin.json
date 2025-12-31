@@ -23,140 +23,140 @@
     {
       "id": "strategy-vision-agent",
       "name": "Strategy & Vision Agent",
-      "path": "agents/01-strategy-vision.md",
+      "path": "./agents/01-strategy-vision.md",
       "description": "Master market analysis, competitive positioning, product vision, and go-to-market strategy. Define winning positions and long-term success."
     },
     {
       "id": "discovery-research-agent",
       "name": "Discovery & Research Agent",
-      "path": "agents/02-discovery-research.md",
+      "path": "./agents/02-discovery-research.md",
       "description": "Expert in user research, customer interviews, persona development, and journey mapping. Understand customer problems deeply."
     },
     {
       "id": "requirements-definition-agent",
       "name": "Requirements & Definition Agent",
-      "path": "agents/03-requirements-definition.md",
+      "path": "./agents/03-requirements-definition.md",
       "description": "Transform insights into clear requirements, user stories, and acceptance criteria. Define specifications that engineering can execute."
     },
     {
       "id": "roadmap-prioritization-agent",
       "name": "Roadmap & Prioritization Agent",
-      "path": "agents/04-roadmap-prioritization.md",
+      "path": "./agents/04-roadmap-prioritization.md",
       "description": "Master prioritization frameworks (RICE, MoSCoW, Kano), roadmap planning, and resource allocation. Create focused, executable roadmaps."
     },
     {
       "id": "launch-gtm-agent",
       "name": "Launch & GTM Agent",
-      "path": "agents/05-launch-gtm.md",
+      "path": "./agents/05-launch-gtm.md",
       "description": "Plan and execute successful product launches. Master go-to-market strategy, sales enablement, and launch coordination."
     },
     {
       "id": "analytics-metrics-agent",
       "name": "Analytics & Metrics Agent",
-      "path": "agents/06-analytics-metrics.md",
+      "path": "./agents/06-analytics-metrics.md",
       "description": "Define KPIs, build dashboards, run A/B tests, and make data-driven decisions. Measure what matters and optimize continuously."
     },
     {
       "id": "leadership-stakeholder-agent",
       "name": "Leadership & Stakeholder Agent",
-      "path": "agents/07-leadership-stakeholder.md",
+      "path": "./agents/07-leadership-stakeholder.md",
       "description": "Master stakeholder management, executive communication, cross-functional alignment, and product advocacy. Lead effectively."
     },
     {
       "id": "product-operations-agent",
       "name": "Product Operations Agent",
-      "path": "agents/08-product-operations.md",
+      "path": "./agents/08-product-operations.md",
       "description": "Streamline product operations, agile practices, tooling, and team processes. Optimize delivery and operational excellence."
     }
   ],
   "commands": [
     {
       "name": "start",
-      "path": "commands/start.md",
+      "path": "./commands/start.md",
       "description": "Begin your product manager journey with 7-phase framework and guided learning path."
     },
     {
       "name": "discover",
-      "path": "commands/discover.md",
+      "path": "./commands/discover.md",
       "description": "Master user discovery and research process with step-by-step methodology."
     },
     {
       "name": "roadmap",
-      "path": "commands/roadmap.md",
+      "path": "./commands/roadmap.md",
       "description": "Create compelling product roadmaps with prioritization frameworks and planning guides."
     },
     {
       "name": "launch",
-      "path": "commands/launch.md",
+      "path": "./commands/launch.md",
       "description": "Execute successful product launches with complete planning guide and execution checklist."
     }
   ],
   "skills": [
     {
       "name": "product-strategy",
-      "path": "skills/strategy/SKILL.md",
+      "path": "./skills/strategy/SKILL.md",
       "description": "Product strategy, market analysis, positioning, and go-to-market planning."
     },
     {
       "name": "user-discovery-research",
-      "path": "skills/discovery/SKILL.md",
+      "path": "./skills/discovery/SKILL.md",
       "description": "User research, customer interviews, personas, and journey mapping methodologies."
     },
     {
       "name": "requirements-specification",
-      "path": "skills/requirements/SKILL.md",
+      "path": "./skills/requirements/SKILL.md",
       "description": "Requirements gathering, user story writing, acceptance criteria, and scope management."
     },
     {
       "name": "roadmap-prioritization-planning",
-      "path": "skills/roadmap/SKILL.md",
+      "path": "./skills/roadmap/SKILL.md",
       "description": "Prioritization frameworks (RICE, MoSCoW, Kano), roadmap creation, and timeline estimation."
     },
     {
       "name": "launch-gtm-execution",
-      "path": "skills/launch/SKILL.md",
+      "path": "./skills/launch/SKILL.md",
       "description": "Go-to-market strategy, launch planning, sales enablement, and marketing campaigns."
     },
     {
       "name": "analytics-metrics-kpi",
-      "path": "skills/analytics/SKILL.md",
+      "path": "./skills/analytics/SKILL.md",
       "description": "Metrics frameworks, KPI definition, dashboarding, A/B testing, and data-driven decisions."
     },
     {
       "name": "leadership-stakeholder-management",
-      "path": "skills/leadership/SKILL.md",
+      "path": "./skills/leadership/SKILL.md",
       "description": "Stakeholder management, executive communication, alignment, and product advocacy."
     },
     {
       "name": "agile-product-management",
-      "path": "skills/agile/SKILL.md",
+      "path": "./skills/agile/SKILL.md",
       "description": "Agile methodologies, Scrum practices, sprint planning, and team collaboration."
     },
     {
       "name": "pricing-monetization",
-      "path": "skills/pricing/SKILL.md",
+      "path": "./skills/pricing/SKILL.md",
       "description": "Pricing strategies, monetization models, unit economics, and revenue optimization."
     },
     {
       "name": "competitive-analysis",
-      "path": "skills/competitive-analysis/SKILL.md",
+      "path": "./skills/competitive-analysis/SKILL.md",
       "description": "Competitive intelligence, market analysis, battlecards, and strategic positioning."
     },
     {
       "name": "stakeholder-communication",
-      "path": "skills/stakeholder-communication/SKILL.md",
+      "path": "./skills/stakeholder-communication/SKILL.md",
       "description": "Executive communication, BLUF format, presentation skills, and stakeholder management."
     },
     {
       "name": "user-research-methods",
-      "path": "skills/user-research/SKILL.md",
+      "path": "./skills/user-research/SKILL.md",
       "description": "User research methods, interview techniques, surveys, and insight synthesis."
     }
   ],
   "hooks": [
     {
       "type": "progress-tracking",
-      "path": "hooks/hooks.json"
+      "path": "./hooks/hooks.json"
     }
   ],
   "marketplaceMetadata": {
