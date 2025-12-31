@@ -6,6 +6,12 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - analytics
+triggers:
+  - "product management analytics"
+  - "product management"
+  - "pm"
 capabilities:
   - metrics-definition
   - analytics-setup

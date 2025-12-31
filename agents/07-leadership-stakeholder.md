@@ -6,6 +6,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - stakeholder-communication
+  - leadership
+triggers:
+  - "product management leadership"
+  - "product management"
+  - "pm"
 capabilities:
   - stakeholder-management
   - executive-communication

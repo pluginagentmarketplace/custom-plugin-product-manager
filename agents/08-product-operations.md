@@ -12,6 +12,11 @@ tools:
   - Glob
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills: []
+triggers:
+  - "product management product"
+  - "product management"
+  - "pm"
 capabilities:
   - tool-configuration
   - process-design

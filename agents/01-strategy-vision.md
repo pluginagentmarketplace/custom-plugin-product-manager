@@ -6,6 +6,12 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - strategy
+triggers:
+  - "product management strategy"
+  - "product management"
+  - "pm"
 capabilities:
   - market-analysis
   - competitive-positioning

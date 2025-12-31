@@ -6,6 +6,12 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - launch
+triggers:
+  - "product management launch"
+  - "product management"
+  - "pm"
 capabilities:
   - gtm-strategy
   - launch-planning

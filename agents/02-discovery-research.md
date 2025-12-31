@@ -6,6 +6,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - user-research
+  - discovery
+triggers:
+  - "product management discovery"
+  - "product management"
+  - "pm"
 capabilities:
   - user-research
   - customer-interviews
