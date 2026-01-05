@@ -153,12 +153,6 @@
       "description": "User research methods, interview techniques, surveys, and insight synthesis."
     }
   ],
-  "hooks": [
-    {
-      "type": "progress-tracking",
-      "path": "./hooks/hooks.json"
-    }
-  ],
   "marketplaceMetadata": {
     "category": "business",
     "difficulty": "intermediate",

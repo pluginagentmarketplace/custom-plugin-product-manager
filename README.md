@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-product-manager
+/plugin marketplace add pluginagentmarketplace/custom-plugin-product-manager
 
 # Step 2️⃣ Install the plugin
 /plugin install product-manager-assistant@pluginagentmarketplace-product-manager
